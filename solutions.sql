@@ -59,10 +59,14 @@ USE world;
 -- LIMIT 10;
 
 -- 11
-SELECT city.Name, city.Population
-FROM city
-JOIN country ON city.CountryCode = country.Code
-WHERE country.Name = 'Japan'
-ORDER BY city.Population DESC
-LIMIT 5;
+-- SELECT city.Name, city.Population
+-- FROM city
+-- JOIN country ON city.CountryCode = country.Code
+-- WHERE country.Name = 'Japan'
+-- ORDER BY city.Population DESC
+-- LIMIT 5;
 
+-- 12
+SELECT Name, Code
+FROM country
+WHERE HeadOfState = 'Elisabeth II';
