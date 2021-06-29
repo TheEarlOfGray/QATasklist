@@ -40,5 +40,10 @@ USE world;
 -- ORDER BY Population
 -- LIMIT 1;
 
-SELECT COUNT(Name)
-FROM country;
+-- SELECT COUNT(Name)
+-- FROM country;
+
+SELECT Name, SurfaceArea 
+FROM country
+ORDER BY SurfaceArea DESC
+LIMIT 10;
