@@ -67,6 +67,13 @@ USE world;
 -- LIMIT 5;
 
 -- 12
-SELECT Name, Code
+-- SELECT Name, Code
+-- FROM country
+-- WHERE HeadOfState = 'Elisabeth II';
+
+-- 13
+SELECT Name
 FROM country
-WHERE HeadOfState = 'Elisabeth II';
+WHERE (Population / SurfaceArea) != 0
+ORDER BY Population / SurfaceArea
+LIMIT 10
