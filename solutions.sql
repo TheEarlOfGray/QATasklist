@@ -43,7 +43,14 @@ USE world;
 -- SELECT COUNT(Name)
 -- FROM country;
 
-SELECT Name, SurfaceArea 
-FROM country
-ORDER BY SurfaceArea DESC
-LIMIT 10;
+-- SELECT Name, SurfaceArea 
+-- FROM country
+-- ORDER BY SurfaceArea DESC
+-- LIMIT 10;
+
+SELECT city.Name, city.Population
+FROM city
+JOIN country ON city.CountryCode = country.Code
+WHERE country.Name = 'Japan'
+ORDER BY city.Population DESC
+LIMIT 5;
