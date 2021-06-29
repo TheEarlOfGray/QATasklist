@@ -14,8 +14,12 @@ USE world;
 -- ORDER BY LifeExpectancy DESC
 -- LIMIT 1;
 
-SELECT city.Name 
-FROM city
-JOIN country ON city.CountryCode=country.Code
-WHERE country.Capital = city.ID AND country.Name = 'Spain';
+-- SELECT city.Name 
+-- FROM city
+-- JOIN country ON city.CountryCode=country.Code
+-- WHERE country.Capital = city.ID AND country.Name = 'Spain';
 
+SELECT countrylanguage.Language
+FROM countrylanguage
+JOIN country ON country.Code = countrylanguage.CountryCode
+WHERE country.Region = 'Southeast Asia';
