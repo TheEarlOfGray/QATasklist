@@ -76,4 +76,4 @@ SELECT Name
 FROM country
 WHERE (Population / SurfaceArea) != 0
 ORDER BY Population / SurfaceArea
-LIMIT 10
+LIMIT 10;
