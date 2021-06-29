@@ -34,8 +34,11 @@ USE world;
 -- JOIN country ON city.CountryCode = country.code
 -- WHERE country.Name = 'China';
 
-SELECT Name
-FROM country
-WHERE Population IS NOT NULL AND Population != 0
-ORDER BY Population
-LIMIT 1;
+-- SELECT Name
+-- FROM country
+-- WHERE Population IS NOT NULL AND Population != 0
+-- ORDER BY Population
+-- LIMIT 1;
+
+SELECT COUNT(Name)
+FROM country;
