@@ -19,7 +19,12 @@ USE world;
 -- JOIN country ON city.CountryCode=country.Code
 -- WHERE country.Capital = city.ID AND country.Name = 'Spain';
 
-SELECT countrylanguage.Language
-FROM countrylanguage
-JOIN country ON country.Code = countrylanguage.CountryCode
-WHERE country.Region = 'Southeast Asia';
+-- SELECT countrylanguage.Language
+-- FROM countrylanguage
+-- JOIN country ON country.Code = countrylanguage.CountryCode
+-- WHERE country.Region = 'Southeast Asia';
+
+SELECT Name 
+FROM city
+WHERE Name LIKE 'F%'
+LIMIT 25;
