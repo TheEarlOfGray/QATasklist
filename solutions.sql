@@ -24,7 +24,12 @@ USE world;
 -- JOIN country ON country.Code = countrylanguage.CountryCode
 -- WHERE country.Region = 'Southeast Asia';
 
-SELECT Name 
+-- SELECT Name 
+-- FROM city
+-- WHERE Name LIKE 'F%'
+-- LIMIT 25;
+
+SELECT COUNT(city.Name)
 FROM city
-WHERE Name LIKE 'F%'
-LIMIT 25;
+JOIN country ON city.CountryCode = country.code
+WHERE country.Name = 'China';
