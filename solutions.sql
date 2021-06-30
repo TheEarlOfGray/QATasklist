@@ -79,5 +79,11 @@ USE world;
 -- LIMIT 10;
 
 -- 14
-SELECT DISTINCT Language
-FROM countrylanguage;
+-- SELECT DISTINCT Language
+-- FROM countrylanguage;
+
+-- 15
+SELECT Name, GNP
+FROM country
+ORDER BY GNP DESC
+LIMIT 10;
