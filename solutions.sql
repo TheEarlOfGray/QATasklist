@@ -72,8 +72,12 @@ USE world;
 -- WHERE HeadOfState = 'Elisabeth II';
 
 -- 13
-SELECT Name
-FROM country
-WHERE (Population / SurfaceArea) != 0
-ORDER BY Population / SurfaceArea
-LIMIT 10;
+-- SELECT Name
+-- FROM country
+-- WHERE (Population / SurfaceArea) != 0
+-- ORDER BY Population / SurfaceArea
+-- LIMIT 10;
+
+-- 14
+SELECT DISTINCT Language
+FROM countrylanguage;
